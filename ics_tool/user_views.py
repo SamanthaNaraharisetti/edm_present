@@ -44,7 +44,6 @@ def user_login(request):
             # return HttpResponse("Invalid login details supplied.")
             return render(request,'ics_tool/unsuccessful_login.html',{})
 
-
     print(form.errors)
 
     return render(request,'ics_tool/login.html',{})
